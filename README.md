@@ -15,7 +15,10 @@ We collected three long-read and two short-read datasets. Here is the path to th
 2. SRR4235527 (Illumina Genome Analyzer IIx)
 ---
 
-
+## Teammate
+* Peter Ge
+* Kuan-Hao Chao
+--
 
 ## Reference
 1. Workman, R. E., Tang, A. D., Tang, P. S., Jain, M., Tyson, J. R., Razaghi, R., ... & Timp, W. (2019). Nanopore native RNA sequencing of a human poly (A) transcriptome. Nature methods, 16(12), 1297-1305.
