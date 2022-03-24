@@ -26,3 +26,15 @@ mv /home/kh.chao/ncbi/public/sra/SRR1153470.sra_* /ccb/salz3/kh.chao/PR_StringTi
 prefetch SRR4235527
 fasterq-dump --split-files /home/kh.chao/ncbi/public/sra/SRR4235527.sra
 mv /home/kh.chao/ncbi/public/sra/SRR4235527.sra_* /ccb/salz3/kh.chao/PR_StringTie_Quantification_Fix/data/short_reads
+
+################################################################################
+
+# Download GRCh38 referecen and GENCODE annotation
+wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_39/GRCh38.p13.genome.fa.gz -P /ccb/salz3/kh.chao/PR_StringTie_Quantification_Fix/data/genome
+wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_39/gencode.v39.annotation.gtf.gz -P /ccb/salz3/kh.chao/PR_StringTie_Quantification_Fix/data/genome
+
+# Download SNP and haplotypes file
+wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/snp151Common.txt.gz -P /ccb/salz3/kh.chao/PR_StringTie_Quantification_Fix/data/genome
+
+# gunzip
+gzip -d /ccb/salz3/kh.chao/PR_StringTie_Quantification_Fix/data/genome/*
