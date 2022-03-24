@@ -19,4 +19,5 @@ hisat2_extract_snps_haplotypes_UCSC.py $GENOME/GRCh38.p13.genome.fa $GENOME/snp1
 hisat2-build -p 16 \
     --snp $GENOME/GRCh38.p13.snp --haplotype $GENOME/GRCh38.p13.haplotype \
     --exon $GENOME/gencode.v39.exon --ss $GENOME/gencode.v39.ss \
-    $GENOME/GRCh38.p13.genome.fa $DATA/hisat2_index/grch38_gencode_v39_snp_tran > $RESULT/hisat2-build.out
+    $GENOME/GRCh38.p13.genome.fa $DATA/hisat2_index/grch38_gencode_v39_snp_tran \
+    1> $RESULT/hisat2-build.out 2>$RESULT/hisat2-build.err
