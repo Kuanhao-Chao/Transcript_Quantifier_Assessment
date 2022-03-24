@@ -1,0 +1,11 @@
+PASS	Basic Statistics	SRR1153470.sra_2.fastq
+FAIL	Per base sequence quality	SRR1153470.sra_2.fastq
+PASS	Per sequence quality scores	SRR1153470.sra_2.fastq
+FAIL	Per base sequence content	SRR1153470.sra_2.fastq
+FAIL	Per base GC content	SRR1153470.sra_2.fastq
+PASS	Per sequence GC content	SRR1153470.sra_2.fastq
+PASS	Per base N content	SRR1153470.sra_2.fastq
+PASS	Sequence Length Distribution	SRR1153470.sra_2.fastq
+FAIL	Sequence Duplication Levels	SRR1153470.sra_2.fastq
+PASS	Overrepresented sequences	SRR1153470.sra_2.fastq
+WARN	Kmer Content	SRR1153470.sra_2.fastq

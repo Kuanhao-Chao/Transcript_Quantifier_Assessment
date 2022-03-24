@@ -1,0 +1,11 @@
+PASS	Basic Statistics	SRR4235527.sra_1.fastq
+PASS	Per base sequence quality	SRR4235527.sra_1.fastq
+PASS	Per sequence quality scores	SRR4235527.sra_1.fastq
+WARN	Per base sequence content	SRR4235527.sra_1.fastq
+FAIL	Per base GC content	SRR4235527.sra_1.fastq
+PASS	Per sequence GC content	SRR4235527.sra_1.fastq
+PASS	Per base N content	SRR4235527.sra_1.fastq
+PASS	Sequence Length Distribution	SRR4235527.sra_1.fastq
+FAIL	Sequence Duplication Levels	SRR4235527.sra_1.fastq
+WARN	Overrepresented sequences	SRR4235527.sra_1.fastq
+FAIL	Kmer Content	SRR4235527.sra_1.fastq
