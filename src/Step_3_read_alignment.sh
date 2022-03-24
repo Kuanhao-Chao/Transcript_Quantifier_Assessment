@@ -31,4 +31,4 @@ hisat2 -p 16 -x $DATA/hisat2_index/grch38_gencode_v39_snp_tran --dta \
 
 # convert sam to bam and sort
 samtools view -bS $DATA/bam/SRR1153470.fastq.grch38.hisat2.sam | \
-    samtools sort -o $DATA/bam/SRR1153470.fastq.grch38.hisat2.sorted.bam
+    samtools sort -@ 16 -o $DATA/bam/SRR1153470.fastq.grch38.hisat2.sorted.bam
