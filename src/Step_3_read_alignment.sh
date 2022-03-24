@@ -21,3 +21,14 @@ hisat2-build -p 16 \
     --exon $GENOME/gencode.v39.exon --ss $GENOME/gencode.v39.ss \
     $GENOME/GRCh38.p13.genome.fa $DATA/hisat2_index/grch38_gencode_v39_snp_tran \
     1> $RESULT/hisat2-build.out 2>$RESULT/hisat2-build.err
+
+################################################################################
+
+# align paired-end short reads
+hisat2 -p 16 -x $DATA/hisat2_index/grch38_gencode_v39_snp_tran --dta \
+    -1 $DATA/short_reads/SRR1153470.sra_1.fastq -2 $DATA/short_reads/SRR1153470.sra_2.fastq \
+    -S $DATA/bam/SRR1153470.fastq.grch38.hisat2.sam 1>$RESULT/hisat2.out 2>$RESULT/hisat2.err
+
+# convert sam to bam and sort
+samtools view -bS $DATA/bam/SRR1153470.fastq.grch38.hisat2.sam | \
+    samtools sort -o $DATA/bam/SRR1153470.fastq.grch38.hisat2.sorted.bam
