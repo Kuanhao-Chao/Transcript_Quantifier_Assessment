@@ -127,3 +127,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Our config
+results/prev/*
+bin/*
+*.fa
+**/*_index
+**/*_index/*
+**/*_quant/
+results/tpm_summary/*
+*.ctab
+*.gtf
+*.tab
+
