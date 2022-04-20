@@ -1,0 +1,1 @@
+kallisto index -k 31 -i /ccb/salz3/kh.chao/PR_Assembler_Quantification_Assessment/Assembler_Quantification_Assessment/results/CHESS_results/kallisto/chess3.01_tx_index /ccb/salz3/kh.chao/PR_Assembler_Quantification_Assessment/Assembler_Quantification_Assessment/results/CHESS_results/kallisto/chess3.01.fa &

@@ -89,7 +89,7 @@ def write_table(sim_type="real"):
     for i in range(num_tissue):
         tissue = "tissue"+str(i)+'/'
         for j in range(num_sample):
-            tpm_2darray[i][j] = {} # {transcript_id: [true_tpm, kallisto_tpm, salmon_tpm, stringtie_tpm]}
+            tpm_2darray[i][j] = {} # {transcript_id: [true_tpm, kallisto_tpm, salmon_tpm, stringtie_tpm, tissue, sample]}
             sample = "sample"+str(j)+'/'
             # get ground truth
             ground_truth_path = true_dir + tissue + sample + "real.t%d_s%d.sorted.gtf" % (i,j)
@@ -103,11 +103,16 @@ def write_table(sim_type="real"):
             # get stringtie estimation
             stringtie_path = expt_dir + "stringtie_e/" + tissue + sample + sim_type+"/out_"+sim_type+".t%d_s%d.sorted.gtf" % (i,j)
             parse_stringtie(stringtie_path, tpm_2darray[i][j])
-            # write to file
+        
             out_dir = tpm_dir + tissue + sample
             Path(out_dir).mkdir(parents=True, exist_ok=True)
+            # create dateframe
             df = pd.DataFrame.from_dict(tpm_2darray[i][j], orient='index').reset_index()
             df.columns = ['transcript_id', 'true_tpm', 'kallisto_tpm', 'salmon_tpm', 'stringtie_tpm']
+            # add tissue and sample column
+            df['tissue'] = [tissue]*len(tpm_2darray[i][j])
+            df['sample'] = [sample]*len(tpm_2darray[i][j])
+            # write to file
             df.to_csv(out_dir + sim_type+"_tpm.csv", index=False)
 
 # real vs. truth

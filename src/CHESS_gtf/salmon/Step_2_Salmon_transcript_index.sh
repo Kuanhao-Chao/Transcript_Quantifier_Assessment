@@ -1,0 +1,1 @@
+salmon index -t /ccb/salz3/kh.chao/PR_Assembler_Quantification_Assessment/Assembler_Quantification_Assessment/results/CHESS_results/salmon/chess3.01.fa -i /ccb/salz3/kh.chao/PR_Assembler_Quantification_Assessment/Assembler_Quantification_Assessment/results/CHESS_results/salmon/chess3.01_tx_index -k 31 &
