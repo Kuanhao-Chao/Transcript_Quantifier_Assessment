@@ -8,6 +8,7 @@ Assessing StringTie, Salmon, and Kallisto with simulated RNA-Seq reads from thre
 ## Teammate
 * Peter Ge
 * Kuan-Hao Chao
+ 
 --
 
 ## Reference
