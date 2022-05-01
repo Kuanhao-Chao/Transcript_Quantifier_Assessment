@@ -1,5 +1,5 @@
 # Transcript Quantifier Assessment
-Assessing StringTie, Salmon, and Kallisto with simulated RNA-Seq reads from three tissues
+Assessing StringTie, Salmon, and Kallisto with simulated RNA-Seq reads with noises introduced in read- and annotation-level.
 
 ## Data
 We used the simulated data from the transcriptional noise work of Varabyou et al **[1]**. In total, there are three tissues, and each of them has 10 samples.
