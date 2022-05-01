@@ -139,4 +139,4 @@ results/tpm_summary/*
 *.ctab
 *.gtf
 *.tab
-
+prev/
